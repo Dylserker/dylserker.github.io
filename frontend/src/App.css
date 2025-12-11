@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: system-ui, Arial, sans-serif;
+}
+.search { display:flex; gap:8px; margin:1rem 0 }
+.search input { flex:1; padding:8px; font-size:1rem }
+.search button { padding:8px 12px }
+.error { color: #c00 }
+.weather { text-align:left; border-top:1px solid #eee; padding-top:1rem }
+.current { display:flex; gap:12px; align-items:center }
+.current .icon { font-size:2rem }
+.hourly { display:flex; gap:8px; margin-top:8px; overflow:auto }
+.hour { min-width:60px; background:#f7f7f7; padding:6px; border-radius:6px; text-align:center }
