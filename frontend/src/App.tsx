@@ -50,8 +50,9 @@ function App() {
 
   useEffect(() => {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js').then(() => {
-        console.log('SW registered')
+      const swUrl = `${import.meta.env.BASE_URL}service-worker.js`
+      navigator.serviceWorker.register(swUrl).then(() => {
+        console.log('SW registered at', swUrl)
       }).catch(console.error)
     }
   }, [])
